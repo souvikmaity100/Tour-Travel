@@ -1,0 +1,287 @@
+/* Import Google front poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    font-family: 'Poppins', sans-serif;
+    text-transform: capitalize;
+    text-decoration: none;
+    transition: all .2s linear;
+}
+
+/* Root Variables */
+:root{
+    --blue:#29d9d5;
+    --black:#111;
+    --white:#fff;
+    --light-color:#aaa;
+    --bg-color:#222;
+    --black-bg:rgba(17, 17, 17, 0.7);
+    --border:.2rem solid var(--blue);
+}
+
+html{
+    font-size: 62.5%;
+    overflow: scroll;
+    scroll-behavior: smooth;
+    scroll-padding-top: 9rem;
+}
+
+body{
+    background: var(--black);
+    overflow-x: hidden;
+}
+
+section{
+    padding: 3rem 9%;
+}
+
+/* Coustomize Scrollbar */
+::-webkit-scrollbar {
+    width: 1rem;
+}
+::-webkit-scrollbar-track {
+    background: var(--black); 
+}
+::-webkit-scrollbar-thumb {
+    background: var(--blue); 
+}
+
+/* Header section */
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    background: var(--bg-color);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem 9%;
+}
+.navbar>a{
+    font-size: 1.7rem;
+    color: var(--light-color);
+    display: inline-block;
+    margin: 0 1rem;
+}
+.navbar>a:hover{
+    color: var(--blue);
+}
+.logo{
+    font-size: 2.5rem;
+    color: var(--white);
+    font-weight: bolder;
+}
+.logo>i{
+    color: var(--blue);
+    padding-right: 0.5rem;
+}
+.btn{
+    display: inline-block;
+    padding: 1rem 3rem;
+    color: var(--blue);
+    border: var(--border);
+    border-radius: 5rem;
+    cursor: pointer;
+    background: none;
+}
+.btn:hover{
+    color: var(--black);
+    background: var(--blue);
+}
+
+
+/* Home section */
+.home{
+    margin: 0 auto;
+    margin-top: 9rem;
+    width: 90%;
+    border-radius: 1rem;
+    background:linear-gradient(var(--black-bg), var(--black-bg)), url(/images/home-bg.jpg) no-repeat center;
+    background-size: cover;
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 5rem;
+}
+.content{
+    text-align: center;
+}
+.content>span{
+    font-weight: bolder;
+    color: transparent;
+    -webkit-text-stroke: 0.1rem var(--white);
+    font-size: 4vw;
+    display: block;
+}
+.content>h3{
+    font-size: 6vw;
+    color: var(--white);
+}
+.content>p{
+    max-width: 60rem;
+    margin: 1rem auto;
+    font-size: 1.7rem;
+    color: var(--light-color);
+    line-height: 2;
+}
+
+
+/* Booking Form */
+.book-form{
+    width: 80%;
+    margin: 1rem auto;
+    margin-top: -5rem;
+    background: var(--bg-color);
+    border-radius: 1rem;
+    box-shadow: 0 0.5rem 1rem rgba(17, 17, 17, 0.3);
+    padding: 3rem 2rem;
+}
+.book-form>form{
+    display: flex;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+.inputBox{
+    flex: 1 1 25rem;
+}
+.inputBox>span{
+    font-size: 1.4rem;
+    color: var(--light-color);
+}
+.inputBox>input{
+    width: 100%;
+    padding: 1.2rem 1.4rem;
+    border: var(--border);
+    border-radius: 5rem;
+    font-size: 1.6rem;
+    color: var(--light-color);
+    text-transform: none;
+    background: none;
+    margin-top: 1rem;
+}
+.inputBox>.btn{
+    flex: 1 1 15rem;
+}
+
+
+/* About Section */
+.about{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    align-items: center;
+    margin-top: 5rem;
+}
+.vodeo-container{
+    flex: 1 1 42rem;
+}
+.vodeo-container>.video{
+    width: 100%;
+    border-radius: 1rem;
+}
+.vodeo-container>.controls{
+    padding: 2rem 0;
+    text-align: center;
+}
+.vodeo-container>.controls>span{
+    display: inline-block;
+    height: 2rem;
+    width: 2rem;
+    border-radius: 50%;
+    background: var(--white);
+    cursor: pointer;
+    margin: 0.7rem;
+}
+.vodeo-container>.controls>span:hover{
+    background: var(--blue);
+}
+.about_content{
+    flex: 1 1 42rem;
+    margin-bottom: 5rem;
+}
+.about_content>span{
+    color: var(--blue);
+    font-size: 2rem;
+}
+.about_content>h3{
+    color: var(--white);
+    font-size: 4rem;
+    margin-top: 0.5rem;
+}
+.about_content>p{
+    padding: 1rem 0;
+    font-size: 1.7rem;
+    color: var(--light-color);
+    line-height: 2;
+}
+
+
+/* Destination section */
+.heading{
+    text-align: center;
+    margin-bottom: 2rem;
+}
+.heading>span{
+    color: var(--blue);
+    font-size: 2rem;
+}
+.heading>h3{
+    color: var(--white);
+    font-size: 4rem;
+}
+.destination>.box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(27rem, 1fr));
+    gap: 1.5rem;
+}
+.box-container>.box{
+    border-radius: 1rem;
+    overflow: hidden;
+    background: var(--bg-color);
+}
+.box-container>.box:hover img{
+    transform: scale(1.1);
+}
+.box-container>.box>.image{
+    height: 20rem;
+    overflow: hidden;
+    width: 100%;
+}
+.box-container>.box>.image>img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.box-content{
+    text-align: center;
+    padding: 2rem;
+}
+.box-content>h3{
+    font-size: 2rem;
+    color: var(--white);
+}
+.box-content>p{
+    padding: 1rem 0;
+    font-size: 1.7rem;
+    color: var(--light-color);
+    line-height: 2;
+}
+.box-content>a{
+    font-size: 1.7rem;
+    color: var(--blue);
+}
+.box-content>a:hover i{
+    padding-left: 1rem;
+}
+.box-content>a>i{
+    padding-right: 0.5rem;
+}
