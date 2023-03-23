@@ -4,6 +4,12 @@ document.querySelector('#menu-btn').onclick = () =>{
     navbar.classList.toggle('active');
 }
 
+document.querySelectorAll('#navbar a').forEach(btn =>{
+    btn.onclick = ()=>{
+        navbar.classList.remove('active');
+    }
+})
+
 
 document.querySelectorAll('.about .vodeo-container .controls .control-btn').forEach(btn =>{
     btn.onclick = ()=>{
