@@ -240,7 +240,7 @@ section{
 }
 .destination>.box-container{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(27rem, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(24rem, 1fr));
     gap: 1.5rem;
 }
 .box-container>.box{
@@ -285,3 +285,123 @@ section{
 .box-content>a>i{
     padding-right: 0.5rem;
 }
+
+
+/* Service section */
+.services>.ser-box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(27rem, 1fr));
+    gap: 1.5rem;
+}
+.ser-box-container>.box{
+    border-radius: 1rem;
+    background: var(--bg-color);
+    padding: 3rem;
+    text-align: center;
+    border: 0.2rem solid var(--black);
+}
+.ser-box-container>.box:hover{
+    border: var(--border);
+}
+.ser-box-container>.box>i{
+    font-size: 5rem;
+    color: var(--blue);
+    margin-bottom: 1rem;
+}
+.ser-box-container>.box>h3{
+    color: var(--white);
+    font-size: 2rem;
+}
+.ser-box-container>.box>p{
+    padding: 1rem 0;
+    font-size: 1.7rem;
+    color: var(--light-color);
+    line-height: 2;
+}
+
+
+/* Gallery section */
+.gallery>.gal-box-container{
+    columns: 3 25rem;
+    column-gap: 1.5rem;
+}
+.gal-box-container>.box{
+    margin-bottom: 1rem;
+    break-inside: avoid;
+}
+.gal-box-container>.box>img{
+    border-radius: 1rem;
+    margin-bottom: 1rem;
+    width: 100%;
+}
+.gal-box-container>.box>span{
+    font-size: 1.4rem;
+    color: var(--light-color);
+}
+.gal-box-container>.box>h3{
+    color: var(--white);
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+
+/* Blog section */
+.blogs>.bl-box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(32rem, 1fr));
+    gap: 1.5rem;
+}
+.bl-box-container>.box{
+    border-radius: 1rem;
+    background: var(--bg-color);
+    overflow: hidden;
+}
+.bl-box-container>.box:hover img{
+    transform: scale(1.1);
+}
+.bl-box-container>.box>.image{
+    height: 25rem;
+    width: 100%;
+    overflow: hidden;
+}
+.bl-box-container>.box>.image>img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.bl-content{
+    padding: 2rem;
+}
+.bl-content>.link{
+    font-size: 2rem;
+    color: var(--white);
+}
+.bl-content>.link:hover{
+    color: var(--blue);
+}
+.bl-content>p{
+    padding: 1rem 0;
+    font-size: 1.7rem;
+    color: var(--light-color);
+    line-height: 2;
+}
+.bl-content>.icon{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 1rem;
+}
+.bl-content>.icon>a{
+    font-size: 1.4rem;
+    color: var(--light-color);
+}
+.bl-content>.icon>a:hover{
+    color: var(--blue);
+}
+.bl-content>.icon>a>i{
+    padding-right: 0.5rem;
+    color: var(--blue);
+}
+
+
+/* footer section */
