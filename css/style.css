@@ -103,7 +103,7 @@ section, footer{
     margin-top: 9rem;
     width: 90%;
     border-radius: 1rem;
-    background:linear-gradient(var(--black-bg), var(--black-bg)), url(/images/home-bg.jpg) no-repeat center;
+    background:linear-gradient(var(--black-bg), var(--black-bg)), url(../images/home-bg.jpg) no-repeat center;
     background-size: cover;
     min-height: 80vh;
     display: flex;
@@ -475,7 +475,7 @@ section, footer{
 
 /* banner section */
 .banner{
-    background:linear-gradient(var(--black-bg), var(--black-bg)), url(/images/banner-bg.jpg) no-repeat center;
+    background:linear-gradient(var(--black-bg), var(--black-bg)), url(../images/banner-bg.jpg) no-repeat center;
     background-size: cover;
     padding: 3rem 2rem;
     background-attachment: fixed;
